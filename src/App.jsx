@@ -1,18 +1,17 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import LandingPage from "./pages/landingPage";
-import ChooseNumber from "./pages/ChooseNumber";
 import "./App.css";
+import { Routes, Route } from "react-router-dom";
+import LandingPage from "./pages/LandingPage";
+import ChooseNumber from "./pages/ChooseNumber";
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="/choose-number" element={<ChooseNumber />} />
-      </Routes>
-    </Router>
+    <Routes>
+      <Route path="/" element={<LandingPage />} />
+      <Route path="/choose-number" element={<ChooseNumber />} />
+    </Routes>
   );
 }
 
 export default App;
+
