@@ -1,4 +1,5 @@
 
+
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
@@ -14,9 +15,14 @@ import ActivationPage from './features/wallet/pages/ActivationPage';
 import ActivationSuccessPage from './features/wallet/pages/ActivationSuccessPage';
 
 
-function App() {
-  const [count, setCount] = useState(0)
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import LandingPage from "./pages/landingPage";
+import ChooseNumber from "./pages/ChooseNumber";
+import "./App.css";
 
+
+function App() {
   return (
 
     <>
@@ -56,6 +62,15 @@ function App() {
     </BrowserRouter>
   );
 
-}
 
-export default App
+    
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/choose-number" element={<ChooseNumber />} />
+      </Routes>
+  
+  );
+
+
+export default App;
+
