@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import ButtonGroup from '@/components/ButtonComponents/ButtonGroup.jsx';
+import ButtonGroup from '@/components/Button/ButtonGroup.jsx';
 import landingPageImage from '@/assets/Image1.png';
 import FeatureCard from '@/components/Card/FeatureCard.jsx';
 import Footer from '@/components/Layout/Footer.jsx';
