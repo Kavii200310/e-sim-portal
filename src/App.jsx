@@ -55,7 +55,7 @@ function App() {
       </Routes>
     </BrowserRouter>
   );
->>>>>>> Stashed changes
+
 }
 
 export default App
