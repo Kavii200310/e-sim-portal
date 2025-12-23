@@ -1,8 +1,8 @@
 import React from 'react';
 import Navbar from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
-import EligibleStatusCard from '@/features/eligibility/components/EligibleStatusCard';
-import NotEligibleStatusCard from '@/features/eligibility/components/NotEligibleStatusCard';
+import EligibleStatusCard from '@/components/eligibility/EligibleStatusCard';
+import NotEligibleStatusCard from '@/components/eligibility/NotEligibleStatusCard';
 
 const EligibilityPage = () => {
   return (

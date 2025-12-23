@@ -45,7 +45,7 @@ const benefits = [
    const navigate = useNavigate(); 
 
   const handleGetESIMClick = () => {
-    navigate('/choose-number'); 
+    navigate('/login'); 
   };
 
 

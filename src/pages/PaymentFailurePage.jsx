@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { X, RotateCcw } from 'lucide-react';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
-import TransactionDetails from '../components/TransactionDetails';
+import TransactionDetails from '../components/payment/TransactionDetails';
 import { useNavigate } from 'react-router-dom';
 
 const transactionDetails = {

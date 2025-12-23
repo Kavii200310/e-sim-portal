@@ -1,7 +1,8 @@
 import React from 'react';
-import PaymentSummary from '../components/PaymentSummary';
-import PaymentMethodTabs from '../components/PaymentMethodTabs';
-import SecureBadgeFooter from '../components/SecureBadgeFooter';
+import { useLocation } from 'react-router-dom';
+import PaymentSummary from '../components/payment/PaymentSummary';
+import PaymentMethodTabs from '../components/payment/PaymentMethodTabs';
+import SecureBadgeFooter from '../components/payment/SecureBadgeFooter';
 
 const GovPayHeader = () => (
   <header className="border-b bg-white py-4 mb-8">
@@ -17,13 +18,16 @@ const GovPayHeader = () => (
 );
 
 const PaymentPage = () => {
+  const location = useLocation();
+  const { selectedNumber } = location.state || {}; // Retrieve passed state
+
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
       <GovPayHeader />
 
       <main className="flex-1 container mx-auto px-4 max-w-xl pb-10">
-        <PaymentSummary />
-        <PaymentMethodTabs />
+        <PaymentSummary selectedNumber={selectedNumber} />
+        <PaymentMethodTabs selectedNumber={selectedNumber} />
         <SecureBadgeFooter />
       </main>
     </div>

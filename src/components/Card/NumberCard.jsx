@@ -1,10 +1,7 @@
-import React from 'react'
+import React from 'react';
 import Badge from '../common/Badge.jsx';
 
-
-
-
-const NumberCard = ({ number, badge, isSelected, onClick }) => {
+const NumberCard = ({ number, badge, price, isSelected, onClick }) => {
   return (
     <button
       onClick={onClick}
@@ -12,13 +9,21 @@ const NumberCard = ({ number, badge, isSelected, onClick }) => {
         isSelected ? 'border-blue-500 bg-blue-50' : 'border-gray-200 bg-white'
       }`}
     >
+      {/* Badge Logic: Only shows if badge is not null */}
       {badge && (
         <div className="absolute top-3 right-3">
           <Badge variant={badge.toLowerCase()}>{badge}</Badge>
         </div>
       )}
-      <div className="text-xl font-semibold text-gray-900 tracking-wide">
+
+      {/* Phone Number */}
+      <div className="text-xl font-semibold text-gray-900 tracking-wide mb-2">
         {number}
+      </div>
+
+      {/* Price Display - Added this section */}
+      <div className="text-sm text-gray-500 font-medium">
+        Rs. {price}
       </div>
     </button>
   );
