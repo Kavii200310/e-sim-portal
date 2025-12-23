@@ -1,18 +1,22 @@
-import React from 'react';
+import React from 'react'
 
-const Footer = () => {
-    return (
-        <footer className="bg-slate-50 border-t py-8 px-6 md:px-12 mt-auto">
-            <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center gap-6 text-sm text-slate-500">
-                <a href="#" className="hover:text-slate-900 transition-colors">Privacy Policy</a>
-                <a href="#" className="hover:text-slate-900 transition-colors">Terms of Service</a>
-                <a href="#" className="hover:text-slate-900 transition-colors">Contact Us</a>
-            </div>
-            <div className="text-center mt-6 text-xs text-slate-400">
-                &copy; 2023 Telco Lanka PLC. All rights reserved.
-            </div>
-        </footer>
-    );
-};
+function Footer() {
+  return (
+    <div>
+      <footer className="bg-white border-t border-gray-200 mt-16">
+        <div className="container mx-auto px-4 py-8">
+          <div className="flex flex-wrap justify-center gap-8 mb-4">
+            <a href="#" className="text-gray-600 hover:text-gray-900">Contact Us</a>
+            <a href="#" className="text-gray-600 hover:text-gray-900">FAQ</a>
+            <a href="#" className="text-gray-600 hover:text-gray-900">Terms & Conditions</a>
+          </div>
+          <p className="text-center text-gray-500 text-sm">
+            © 2025 Telco SL. All rights reserved.
+          </p>
+        </div>
+      </footer>
+    </div>
+  )
+}
 
-export default Footer;
+export default Footer
