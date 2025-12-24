@@ -24,7 +24,7 @@ const ActivationSteps = () => {
         <div className="space-y-4">
             {steps.map((step, index) => (
                 <div key={index} className="flex gap-4">
-                    <div className="flex-shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-blue-100 text-blue-600 font-semibold text-sm">
+                    <div className="shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-blue-100 text-blue-600 font-semibold text-sm">
                         {index + 1}
                     </div>
                     <div>
